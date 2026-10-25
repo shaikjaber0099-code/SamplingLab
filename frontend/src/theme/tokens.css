@@ -1,0 +1,64 @@
+/* ==========================================================================
+   The Sampling Lab — Design Tokens & Thermal Theme
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Console Frame */
+  --bg: #0B0F17;
+  --surface: #121826;
+  --surface-2: #1A2234;
+  --surface-hover: #222C44;
+  --border: #243049;
+  --border-focus: #38BDF8;
+
+  /* Typography */
+  --text: #E6EAF2;
+  --text-muted: #8B96AD;
+  --text-dim: #54607B;
+
+  /* Temperature Thermal Scale */
+  --t-cold: #38BDF8;    /* T 0.0-0.3: Ice blue, deterministic */
+  --t-cool: #2DD4BF;    /* T 0.3-0.7: Teal, focused */
+  --t-warm: #FBBF24;    /* T 0.7-1.0: Amber, balanced */
+  --t-hot: #FB7185;     /* T 1.0-1.5: Coral, creative */
+  --t-molten: #F43F5E;  /* T 1.5-2.0: Crimson, chaotic */
+
+  --t-gradient-h: linear-gradient(90deg, #38BDF8, #2DD4BF, #FBBF24, #FB7185, #F43F5E);
+  --t-gradient-v: linear-gradient(180deg, #F43F5E 0%, #FB7185 25%, #FBBF24 50%, #2DD4BF 75%, #38BDF8 100%);
+
+  /* Interactive / Accents */
+  --accent-current: #FBBF24;
+  --accent-glow: rgba(251, 191, 36, 0.25);
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* Font Families */
+  --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Shadows & Glassmorphism */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.6);
+  --glass-bg: rgba(18, 24, 38, 0.85);
+  --glass-border: rgba(36, 48, 73, 0.8);
+}
+
+/* Light Mode: "Daylight Lab" */
+[data-theme="light"] {
+  --bg: #F0F4F8;
+  --surface: #FFFFFF;
+  --surface-2: #E8EDF5;
+  --surface-hover: #DDE5F0;
+  --border: #CBD5E1;
+  --border-focus: #0284C7;
+  --text: #0F172A;
+  --text-muted: #475569;
+  --text-dim: #94A3B8;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(203, 213, 225, 0.9);
+}
